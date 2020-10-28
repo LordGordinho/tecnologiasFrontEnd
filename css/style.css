@@ -1,7 +1,13 @@
 body{
     background: #ffffff;
     margin: 0;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Caveat', cursive;
+    font-size: 21px;
+
+}
+
+body h1 , h2 , h3 {
+    font-family: 'Lobster', cursive;
 }
 
 h1 img{
