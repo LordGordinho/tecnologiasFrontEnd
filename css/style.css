@@ -1,0 +1,48 @@
+body{
+    background: #ffffff;
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1 img{
+    width: 4%;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.principal{
+    text-align: center;
+    background: #cccccc;
+    padding: 20px;
+    margin: 0;
+}
+
+em strong{
+    color: red;
+}
+
+#valores{
+    font-size: 20px;
+}
+
+.beneficios img{
+    width: 50vw;
+}
+
+ul{
+    margin-right: 50vh ;
+    vertical-align: top;
+    display: inline-block;
+}
+.beneficios ul li{
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
