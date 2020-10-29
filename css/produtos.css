@@ -1,0 +1,21 @@
+bady{
+    margin: 0;
+}
+
+header{
+    background: lightgray;
+}
+nav li{
+    display: inline;
+    text-decoration: none;
+    margin-left: 15px;
+
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
