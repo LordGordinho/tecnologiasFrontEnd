@@ -1,9 +1,26 @@
-bady{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
 }
 
 header{
     background: lightgray;
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 120px;
+    right: 0;
 }
 nav li{
     display: inline;
