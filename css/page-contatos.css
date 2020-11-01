@@ -2,11 +2,15 @@ form{
     width: 50vw;
     margin: 0 auto;
 }
+
+form > label{
+    margin-top: 15px;
+}
 label{
     width: 100%;
     display: block;
 
-    font-size: 30px;
+    font-size: 25px;
 }
 input,textarea{
     width: 100%;
@@ -14,8 +18,91 @@ input,textarea{
     padding: 10px 0 10px 5px;
     border-radius: 10px;
     margin: 15px 0 15px 0;
+    outline: none;
 }
 
+textarea{
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    border: 2px solid darkorange;
+}
+
+.hour{
+    padding:0;
+
+}
 .enviar{
     margin: 15px 0 15px 0;
 }
+
+.preference .choice{
+    display: block;
+}
+
+.preference .choice input{
+    width: 3%;
+    display: inline;
+    padding: 0;
+    margin: 5px 0;
+    
+}
+.preference .choice label{
+    display: inline;
+    width: 30px;
+    font-size: 20px;
+}
+
+label input{
+    display: inline;
+    width: 5%;
+}
+
+form legend {
+    display:block;
+    font-size: 25px;
+    padding: 10px 0 0 0;
+}
+
+.enviar{
+    background: orange;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px 0;
+    width: 90%;
+    margin: 15px auto;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.05)
+}
+
+form h2{
+    margin: 20px 0 10px 8px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+thead{
+    font-weight: bold;
+    background: darkorange;
+}
+tbody{
+    background: orange;
+}
+
+th,td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+table{
+    margin: 10px 0 30px 10px;
+    color: white;
+}
+

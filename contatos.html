@@ -6,9 +6,9 @@
     <title>Produtos da Barbearia</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page-contatos.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/page-contatos.css">
 </head>
 <body>
     <header>
@@ -31,33 +31,71 @@
     <main>
         <form action="POST">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Insira seu nome">
+            <input type="text" id="name" name="name" placeholder="Insira seu nome" required>
 
             <label for="telefone">Email</label>
-            <input type="text" id="email" name="email" placeholder="Insira seu email">
+            <input type="email" id="email" name="email" placeholder="seuemail@dominio" required>
 
             <label for="telefone">Telefone</label>
-            <input type="text"  id="telefone" name="telefone" placeholder="Insira seu telefone">
+            <input type="tel"  id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
 
-            <textarea id="mensagem" cols="30" rows="10" name="texto"></textarea>
+            <label for="texto">Informações</label>
+            <textarea id="texto" cols="32" rows="10" name="texto"></textarea>
 
-            <div class="preference">
-                <p>Como gostaria de ser contactado?</p>
+            <fieldset class="preference">
+                <legend>Como gostaria de ser contactado?</legend>
+                <div class="choice">
+                    <input type="radio" name="escolhaContato" id="radio-email" value="email" >
+                    <label for="radio-email">Email</label>
 
-                <label for="radio-email">Email</label>
-                <input type="radio" name="escolhaContato" id="radio-email" value="email" checked>
+                </div>
+                <div class="choice">
+                    <input type="radio" name="escolhaContato" id="radio-telefone" value="telefone">
+                    <label for="radio-telefone">Telefone</label>
 
-                <label for="radio-telefone">Telefone</label>
-                <input type="radio" name="escolhaContato" id="radio-telefone" value="telefone">
+                </div>
+                <div class="choice">
+                    <input type="radio" name="escolhaContato" id="radio-whatsapp" value="whatsapp" checked>
+                    <label for="radio-whatsapp">Whatsapp</label>
 
-                <label for="radio-whatsapp">Whatsapp</label>
-                <input type="radio" name="escolhaContato" id="radio-whatsapp" value="whatsapp">
+                </div>
 
-            </div>
+            </fieldset>
+            <fieldset class="hour">
+                <legend>Qual Horario Prefere ser atendido ?</legend>
+                <select name="hour" id="hour">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
 
-            <label for="checkEmail">Gostaria de receber novidades <input type="checkbox" name="checkEmail" id="checkEmail"></label>
+            <label class="checkEmail" for="checkEmail">Gostaria de receber novidades <input type="checkbox" name="checkEmail" id="checkEmail" checked></label>
 
-            <input class="enviar" type="submit" value="Enviar informações">
+            <input class="enviar" type="submit" value="Enviar informações" checked>
+
+            <h2>Horários e dias de funcionamento:</h2>
+
+            <table>
+                <thead>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td>
+                        <td>Das 8h às 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Das 8h às 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Das 8h às 12h</td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
     </main>
 

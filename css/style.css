@@ -46,6 +46,7 @@ nav a{
 nav a:hover{
     color: #C78C19;
     text-decoration: underline;
+
 }
 
 .lista-produtos{
@@ -65,11 +66,13 @@ ul.lista-produtos li{
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    transition: 0.2s;
     
 }
 ul.lista-produtos li:hover{
     border-color: #C78C19;
     cursor: pointer;
+    transform: scale(1.05);
 
 }
 
